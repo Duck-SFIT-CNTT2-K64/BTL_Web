@@ -5,8 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hệ thống quản lý phòng học</title>
     <link rel="stylesheet" href="./in4.css">
+    <link rel="stylesheet" href="./respon_in4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
+    <header>
+        <div class="title">
+            <img class="logo" src="../img/logoutc.jpg" alt="logo">
+            <p class="title--content1">University of Transport and Communication</p>
+            <p class="title--content2"><b>Hệ thống quản lý phòng học</b></p>
+        </div>
+    </header>
+
+    <nav class="nav-container">
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="navigation_sticky">
+            <li class="navigation_sticky--content"><a href="../home/home_page.html" class="sticky_link">Trang chủ</a></li>
+            <li class="navigation_sticky--content"><a href="../room_infomation/in4.html" class="sticky_link">Thông tin phòng học</a></li>
+            <li class="navigation_sticky--content"><a href="../schedule/Lichbieuphonghoc.html" class="sticky_link">Lịch biểu phòng học</a></li>
+            <li class="navigation_sticky--content"><a href="#" class="sticky_link">Đăng ký phòng học</a></li>
+            <li class="navigation_sticky--content"><button><a class="button--sign_in" href="../sigh_in/login/dnhap.html">Sign-in</a></button></li>
+        </ul>
+    </nav>
+
     <div class="container">
         <!-- Left sidebar -->
         <div class="sidebar">
@@ -189,6 +215,44 @@
             </div>
         </div>
     </div>
+
+    <footer id="footer">
+        <div class="container_footer">
+          <div class="footer-content">
+          <h3 class="link_fast">Thông tin liên hệ</h3>
+          <p>Email:abc123@gmail.com</p>
+          <p>Phone:1234567890</p>
+          <p>Address:123 abc street, city</p>
+        </div>
+        <div class="footer-content">
+          <h3 class="link_fast">Liên kết nhanh</h3>
+            <ul class="list">
+              <li><a class="link_list" href="">Trang chủ</a></li>
+              <li><a class="link_list" href="">Giới thiệu</a></li>
+              <li><a class="link_list" href="">Dịch vụ</a></li>
+              <li><a class="link_list" href="">Hỗ trợ</a></li>
+              <li><a class="link_list" href="">Chính sách bảo mật</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+          <h3 class="link_fast">Mạng xã hội</h3>
+          <ul class="social-icons">
+            <li><a class="link_list" href=""><i class="fab fa-facebook"></i></a></li>
+            <li><a class="link_list" href=""><i class="fab fa-twitter"></i></a></li>
+            <li><a class="link_list" href=""><i class="fab fa-instagram"></i></a></li>
+            <li><a class="link_list" href=""><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+          <form class="search" action="" id="search-box">
+            <input type="text" id="search-text">
+            <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="button-bar">
+        <p>&copy; 2024 Bản quyền thuộc về BTL</p>
+      </div>
+      </footer>
+
     <script src="./script_in4.js"></script>
 </body>
 </html>

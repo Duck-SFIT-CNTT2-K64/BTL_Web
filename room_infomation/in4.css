@@ -9,9 +9,103 @@
     padding: 20px;
 }
 
+body{
+    background-image: url(../img/background_purple.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    background: gray;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+}
+.title{
+    color: white;
+    display: flex;
+    font-size: 25px;
+    background-image: linear-gradient(to right,rgb(152, 74, 152),rgb(107, 33, 107));
+    height: 150px;
+    width: 100%;
+}
+.logo{
+    cursor: pointer;
+    height: 100px;
+    width: 150px;
+    position: relative;
+    top: 20px;
+}
+
+.title--content1{
+    margin: 57px 0px;
+    font-size: 25px;
+}
+
+.title--content2{
+    margin: 47px 171px;
+    font-size: 35px;
+}
+
+/* navigation*/
+.navigation_sticky{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    align-items: center;
+}
+.navigation_sticky--content{
+    padding: 10px 10px;
+}
+.navigation_sticky--content a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-style: italic;
+    font-size: 18px; 
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: transform 0.5s ease;
+}
+.button--sign_in{
+    cursor: pointer;
+    background-image: linear-gradient(rgb(164, 68, 164),rgba(72, 148, 148, 0.589),rgb(158, 46, 158));
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+    border-radius: 8px;
+    height: 50px;
+    width: 100px;
+}
+.sticky{
+    position: sticky;
+    top: 0;
+    background-color: rgb(55, 17, 65);
+    width: 100%;
+    margin-top: -10px;
+    padding: 0;
+    z-index: 10;
+}
+
+.sticky_link{
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 600;
+}
+.navigation_sticky--content a:hover{
+    background-color: rgb(60, 2, 58);
+    /* padding: 12px; */
+    transform: scale(1.1);
+}
+
 .sidebar {
     width: 250px;
     padding-right: 20px;
+    color: white;
 }
 
 .menu-title {
@@ -83,6 +177,7 @@
     flex-direction: column;
     align-items: center;
     padding: 15px;
+    color: white;
 }
 
 .room-info h4 {
@@ -91,4 +186,161 @@
 
 .room-info p {
     margin: 0;
+}
+
+.container_footer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* margin-top: 20px;
+    padding-bottom: 35%; */
+}
+
+#footer{
+    background: rgb(107, 33, 107);
+    padding-top: 50px;
+    /* display: grid; */
+  }
+  
+  .footer-content{
+    width: 33.3%;
+  }
+  
+  .link_fast{
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .footer-content p{
+    width: 190px;
+    margin: auto;
+    padding: 7px;
+  }
+  
+  .footer-content ul{
+    text-align: center;
+  }
+  
+  .list{
+    padding: 0;
+  }
+  
+  .list li{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+  }
+  
+  .list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #f18930;
+    transition-duration: .5s;
+  }
+  
+  .list li:hover::before{
+    width: 70px;
+  }
+  
+  .social-icons{
+    text-align: center;
+    padding: 0;
+    font-size: 20px;
+  }
+  
+  .social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+  }
+
+.link_list{
+    text-decoration: none;
+    color: white;
+}
+  
+.link_list:hover{
+    color:#f18930;
+}
+  
+.social-icons i:hover{
+    color:#f18930;
+}
+  
+.button-bar{ 
+    background: #f18930;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+  
+.button-bar p{
+    color: #343343;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
+  
+.search{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+  
+#search-box{
+    background-color: #fff;
+    border-radius: 30px;
+}
+  
+#search-box #search-text{
+    width: 300px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size:  18px;
+}
+  
+#search-box #search-btn{
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+  
+#search-box:hover #search-text{
+    width: 300px;
+    padding: 10px 0px 10px 15px;
+}
+
+.nav-container {
+    width: 100%;
+    position: relative;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    z-index: 1000;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
 }

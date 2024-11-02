@@ -112,7 +112,7 @@ header{
 }
 .navigation_sticky--content a:hover{
     background-color: rgb(60, 2, 58);
-    padding: 24px;
+    /* padding: 24px; */
     transform: scale(1.1);
 }
 

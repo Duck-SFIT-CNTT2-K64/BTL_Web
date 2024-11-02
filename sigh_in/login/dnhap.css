@@ -67,6 +67,59 @@ img.logo{
     margin-top: 65px;   
 }
 
+.navigation_sticky{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    align-items: center;
+}
+.navigation_sticky--content{
+    padding: 10px 10px;
+}
+.navigation_sticky--content a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-style: italic;
+    font-size: 18px; 
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: transform 0.5s ease;
+}
+.button--sign_in{
+    cursor: pointer;
+    background-image: linear-gradient(rgb(164, 68, 164),rgba(72, 148, 148, 0.589),rgb(158, 46, 158));
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+    border-radius: 8px;
+    height: 50px;
+    width: 100px;
+}
+.sticky{
+    position: sticky;
+    top: 0;
+    background-color: rgb(55, 17, 65);
+    width: 100%;
+    margin-top: -10px;
+    padding: 0;
+    z-index: 10;
+}
+
+.sticky_link{
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 600;
+}
+.navigation_sticky--content a:hover{
+    background-color: rgb(60, 2, 58);
+    /* padding: 12px; */
+    transform: scale(1.1);
+}
+
 h2 {
     margin-bottom: 20px;
     font-size: 35px;
@@ -120,4 +173,45 @@ a:hover {
 #message {
     color: red;
     margin-top: 15px;
+}
+
+@media screen and (max-width: 1366px) {
+    body{
+        background-size: cover;
+    }
+
+    div.title h1{
+        font-size: 30px;
+        margin: 40px 0;
+    }
+
+    div.title b{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    
+}
+
+@media screen and (max-width: 768px){
+
+}
+
+@media screen and (max-width: 480px){
+    body{
+        background-size: cover;
+    }
+
+    div.title h1{
+        font-size: 14px;
+        margin: 62px 0;
+    }
+
+    div.title b{
+        font-size: 10px;
+    }
+    .login-container{
+        margin: 57px;
+    }
 }

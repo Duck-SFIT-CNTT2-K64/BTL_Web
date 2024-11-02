@@ -37,7 +37,7 @@ div.title h1{
 
 div.title p{
     display: flex;
-    font-size: 50px;
+    font-size: 45px;
     justify-content: flex-end;
     align-items: center;
 }
@@ -48,6 +48,61 @@ img.logo{
     position: relative;
     top: 20px;
 }
+
+.navigation_sticky{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    align-items: center;
+    background-color: #614170;
+}
+.navigation_sticky--content{
+    padding: 10px 10px;
+}
+.navigation_sticky--content a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-style: italic;
+    font-size: 18px; 
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: transform 0.5s ease;
+}
+.button--sign_in{
+    cursor: pointer;
+    background-image: linear-gradient(rgb(164, 68, 164),rgba(72, 148, 148, 0.589),rgb(158, 46, 158));
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+    border-radius: 8px;
+    height: 50px;
+    width: 100px;
+}
+.sticky{
+    position: sticky;
+    top: 0;
+    background-color: rgb(55, 17, 65);
+    width: 100%;
+    margin-top: -10px;
+    padding: 0;
+    z-index: 10;
+}
+
+.sticky_link{
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 600;
+}
+.navigation_sticky--content a:hover{
+    background-color: rgb(60, 2, 58);
+    /* padding: 12px; */
+    transform: scale(1.1);
+}
+
 .main_dk{
     background-image: url(../images/dang_nhap.jfif);
     background-size: cover;
@@ -109,4 +164,49 @@ button:hover {
     color: red;
     text-align: center;
     margin-top: 15px;
+}
+@media screen and (max-width: 1366px){
+    div.title p{
+        margin: 90px 0;
+    }
+
+    div.title h1{
+        margin: 48px 0;
+    }
+
+    .navigation_sticky--content a{
+        font-size: 17px;
+        margin: 0;
+        padding: 0;
+    }
+    button{
+        margin: 0;
+    }
+    .navigation_sticky{
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    div.title p{
+        font-size: 12px;
+        margin: 0;
+    }
+
+    div.title h1{
+        font-size: 10px;
+        margin: 65px 0;
+    }
+    .navigation_sticky--content a{
+        font-size: 14px;
+    }
+    button{
+        margin: 0;
+    }
+    .container_dk{
+        margin: 22px;
+    }
+    .navigation_sticky{
+        padding: 0;
+    }
 }
