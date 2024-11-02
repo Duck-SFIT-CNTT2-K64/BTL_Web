@@ -459,12 +459,15 @@
         font-size: 50px;
     }
     .footer-content p {
-       padding: 20px;
+       padding: 40px;
+       font-size: 40px;
     }
     .list li {
-        padding: 20px;
+        padding: 30px;
+        font-size: 40px;
     }
     #search-box {
+        margin-top: 100px;
         height: 80px;
         width: 600px;
         margin-left: 210px;
@@ -484,7 +487,7 @@
         display: flex;
         background: #f18930;
         padding: 10px;
-        margin-top: 600px;
+        margin-top: 500px;
         justify-content: center;
     }
     .button-bar p {
