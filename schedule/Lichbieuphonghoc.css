@@ -34,8 +34,8 @@ div.title h1{
 
 div.title p{
     display: flex;
-    font-size: 50px;
-    width: 50%;
+    font-size: 40px;
+    width: 40%;
     justify-content: flex-end;
     align-items: center;
 }
@@ -71,7 +71,7 @@ nav li a{
 }
 .signin_button{
     cursor: pointer;
-    background-image: linear-gradient(rgb(164, 68, 164),rgba(230, 91, 167, 0.589),rgb(158, 46, 158));
+    background-image: linear-gradient(rgb(85, 16, 85),rgba(83, 10, 50, 0.589),rgb(157, 17, 157));
     /* color: white; */
     font-weight: bold;
     font-style: italic;
@@ -98,9 +98,9 @@ nav .menu a{
 }
 nav li a:hover{
     background-color: rgb(60, 2, 58);
-    padding: 24px;
     transform: scale(1.1);
 }
+
 
 /* Duoi la content */
 
@@ -109,8 +109,8 @@ nav li a:hover{
 
 .schedule-section {
     padding: 20px;
-    /* display: flex; */
-    margin-left: 30px;
+    display: flex;
+    margin-left: 10px;
 }
 
 .schedule-header {
@@ -174,14 +174,10 @@ nav li a:hover{
 
 
 
-
-
 /* Calendar */
 
 .calendar-note {
-    position: absolute;
-    left: 69%;
-    bottom: 17%;
+    margin-left: 100px;
 }
 
 .calendar {
@@ -277,7 +273,7 @@ span:hover{
 
 /* Style for the highlighted selected date */
 .highlighted {
-    background-color: #638085; /* Change to desired highlight color */
+    background-color: #638085;
     color: rgb(224, 219, 219);
     font-weight: bold;
     border-radius:  50%;
