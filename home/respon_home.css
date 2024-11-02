@@ -1,0 +1,260 @@
+/* Laptop/Small Desktop (max-width: 1366px) */
+@media screen and (max-width: 1366px) {
+
+    .main--content {
+        padding: 3% 15px;
+    }
+
+    .img--welcome {
+        height: 350px;
+        margin: 80px 10px;
+    }
+
+    .calendar{
+        width: 95%;
+        margin: 45px -255px;
+    }
+    #footer{
+        margin-top: 50%;
+    }
+    .information_layer{
+        width: 68%;
+        margin: 50px 10px 0px -184px;
+    }
+}
+
+/* Tablet (max-width: 992px) */
+@media screen and (max-width: 992px) {
+    .title {
+        height: auto;
+        padding: 15px;
+    }
+
+    .logo {
+        height: 80px;
+        width: 120px;
+    }
+
+    .img_layer.bottom,
+    .img_layer.middle,
+    .img_layer.top {
+        transform: none;
+        display: none;
+    }
+
+    .navigation_sticky {
+        justify-content: center;
+    }
+
+    .navigation_sticky--content a {
+        padding: 8px 15px;
+        font-size: 16px;
+    }
+
+    .main--content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome, .img--welcome {
+        width: 100%;
+        max-width: none;
+        padding-left: 0;
+    }
+
+    .img--welcome {
+        height: 300px;
+    }
+
+    .calendar_layer, .information_layer {
+        width: 90%;
+        transform: none;
+        margin: 69px 10px 0px -184px;
+    }
+
+    #footer{
+        margin-top: 80%;
+    }
+
+    .welcome_content--button {
+        width: 24%;
+    }
+}
+
+/* Mobile (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .title {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        margin: -20px 212px 20px -30px;
+    }
+
+    .title--content2,
+    .title--content1{
+        margin: 0;
+    }
+
+    .navigation_sticky {
+        flex-direction: column;
+    }
+
+    .navigation_sticky--content {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navigation_sticky--content a {
+        display: block;
+        padding: 10px;
+    }
+
+    .button--sign_in {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .welcome_content--button {
+        width: 100%;
+    }
+
+    .img--welcome {
+        height: 250px;
+    }
+
+    .img_layer {
+        width: 80%;
+        height: 200px;
+        position: relative;
+        margin: 10px auto;
+    }
+
+    .img_layer.bottom,
+    .img_layer.middle,
+    .img_layer.top {
+        transform: none;
+        display: none;
+    }
+
+    .calendar_layer{
+        width: 100%;
+        position: relative;
+        top: 0;
+        margin: 50px -56px; 
+    }
+
+    .calendar_layer.top{
+        margin: -478px 134px;
+    }
+
+    .calendar_content,
+    .information_content {
+        padding: 15px;
+    }
+
+    .footer-content {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    #search-box #search-text {
+        width: 200px;
+    }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .logo {
+        height: 60px;
+        width: 90px;
+    }
+
+    .welcome_title {
+        font-size: 24px;
+    }
+
+    .img--welcome {
+        height: 200px;
+    }
+
+    .calendar_content--title,
+    .information_content--title {
+        font-size: 20px;
+    }
+
+    .link_fast {
+        font-size: 22px;
+    }
+
+    #search-box #search-text {
+        width: 150px;
+    }
+
+    .login-modal-content,
+    .signup-modal-content {
+        width: 95%;
+        margin: 10% auto;
+    }
+
+    .calendar_layer.top{
+        margin: -390px 196px;
+    }
+
+    .information_layer {
+        width: 90%;
+        transform: none;
+        margin: 388px 10px 0px -79px;
+    }
+    #footer{
+        margin-top: 390%;
+    }
+}
+/* Additional Responsive Adjustments for Modals and Footer */
+
+/* For small tablets and mobile devices */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+    #search-box #search-text {
+        width: 180px;
+    }
+    .calendar_layer.bottom,
+    .calendar_layer.middle{
+        display: none !important;
+    }
+    /* #footer{
+        margin-top: 213%;
+    } */
+    .container_footer{
+        flex-direction: column;
+    }
+}
+
+/* Small Mobile (max-width: 480px) */
+/* @media screen and (max-width: 480px) {
+    .login-modal-content, .signup-modal-content {
+        width: 90%;
+        margin: 5% auto;
+    }
+    .calendar_layer, .information_layer {
+        width: 100%;
+        margin: 10px auto;
+    }
+    .calendar_layer.bottom,
+    .calendar_layer.middle{
+        display: none !important;
+    }
+} */

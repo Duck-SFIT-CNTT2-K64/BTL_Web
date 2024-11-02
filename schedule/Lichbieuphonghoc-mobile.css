@@ -1,0 +1,407 @@
+@media only screen and (max-width: 768px) {
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background: fixed;
+        background-color: #c2accc;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    table {
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+    }
+
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    header .title{
+        color: white;
+        font-size: 14px;
+        height: 135px;
+        width: 100%;
+        background-color: #614170;
+    }
+    div.title h1{
+        font-size: 10px;
+        width: 33.33%;
+    }
+    div.title p{
+        width: 50%;
+        font-size: 20px;
+        text-align: center;
+        
+    }
+    img.logo{
+        cursor: pointer;
+        width: 30%;
+    }
+
+
+    /* navigation*/
+    nav ul{
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+        align-items: center;
+
+    }
+    nav li a{
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        font-style: italic;
+        font-size: 8px;
+        font-weight: 600;
+        padding: 0;
+        transition: transform 0.3s ease;
+    }
+    button.signin_button{
+        cursor: pointer;
+        background-image: linear-gradient(rgb(164, 68, 164),rgba(72, 148, 148, 0.589),rgb(158, 46, 158));
+        color: white;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 15px;
+        border-radius: 8px;
+        height: 50px;
+        width: 100px;
+    }
+    nav.Menu{
+        background-color: rgb(55, 17, 65);
+        padding: 0;
+        z-index: 10;
+    }
+
+
+    nav li a:hover{
+        background-color: rgb(60, 2, 58);
+        padding: 3px;
+    }
+
+
+
+    /* Duoi la content */
+
+
+
+
+    .schedule-section {
+        padding: 0px;
+        margin-left: 0px;
+    }
+
+    .schedule-header {
+        margin-top: 50px;
+        margin-left: 55px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .schedule-table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    .schedule-table th{
+        border: 1px solid #ddd;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: 300;
+        background-color: #8668ac;
+        font-weight: normal;
+        
+    }
+    .schedule-table td {
+        border: 1px solid #ddd;
+        /* padding: 10px; */
+        font-size: 18px;
+        background-color: burlywood;
+    }
+
+
+    .schedule-table td.time-slot{
+        width: 150px;
+        background-color: rgb(170, 124, 200);
+        color: rgb(0, 0, 0);
+    }
+
+
+    .schedule-table td{
+        background :#bb9bc9;
+        height: 80px;
+    }
+
+    .schedule-table .schedule-content:hover{
+        background-color: rgb(147, 104, 167);
+    }
+
+    .registerclass{
+        opacity: 0;
+    }
+    .registerclass:hover{
+        display: block;
+        opacity: 1;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        text-align: center;
+    }
+    /* Calendar */
+
+    .calendar-note {
+        position: relative;
+        left: 0;
+        bottom: 0;
+    }
+
+    .calendar {
+        border: solid #000;
+        width: 100%;
+        height: 220px;
+        text-align: center;
+        background-color: antiquewhite;
+    }
+
+    .current-date {
+        background-color: #2cbd79;
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+        width: 100%;
+        height: 40px;
+    }
+
+
+    .calendar ul{
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        background-color: antiquewhite;
+    }
+    .calendar ul li{
+        width: calc(100% / 7);
+    }
+    .calendar .weeks li{
+        font-weight: 400;
+        background-image: linear-gradient(rgb(108, 196, 164),rgb(104, 104, 175));
+        color: white;
+    }
+    .calendar .days .li{
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    .calendar .days .li::before{
+        z-index: -1;
+        transform: translate(-50%,-50%);
+    }
+
+    .icons{
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        top: 30px;
+    }
+
+    .icons span{
+        margin-right: 5px;
+    }
+    span:hover{
+        background-color: #865f95;
+        cursor: pointer;
+    }
+
+
+
+
+    .days li:hover{
+        background-color: gray;
+        cursor: pointer;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    .days li.inactive{
+        color: #aaa;
+    }
+    .days li.active{
+        color:  rgb(224, 236, 236);
+        background-color: #347fd5;
+        border-radius: 50%;
+    }
+
+
+
+    .selected-date {
+        background-color: #605c5a; /* Highlight color */
+        color: rgb(232, 239, 239);
+        font-weight: bold;
+        z-index: 10;
+        
+    }
+
+    /* Style for the highlighted selected date */
+    .highlighted {
+        background-color: #638085; /* Change to desired highlight color */
+        color: rgb(251, 251, 251);
+        font-weight: bold;
+        border-radius:  50%;
+    }
+
+
+
+
+
+/*Footer*/
+    footer{
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: white;
+        background: #343434;
+    }
+
+    
+    .footer-container{
+        display: block;
+        margin: auto;
+        padding: 5px;
+    }
+    
+    .footer-content{
+        width: 35%;
+    }
+    
+    .footer-content h3{
+        /* width: 500px; */
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .footer-content p{
+        /* width: 500px; */
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .footer-content ul{
+        text-align: center;
+    }
+    
+    .list{
+        padding: 0;
+    }
+    
+    .list li{
+        text-align: center;
+        list-style-type: none;
+        padding: 20px;
+        /* width: 500px; */
+    }
+    
+    .list li::before{
+        content: '';
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 100%;
+        width: 0;
+        height: 2px;
+        background: #f18930;
+        transition-duration: .5s;
+    }
+    
+    .list li:hover::before{
+        width: 70px;
+    }
+    
+    .social-icons{
+        text-align: center;
+        padding: 0;
+        font-size: 20px;
+    }
+    
+    .social-icons li{
+        display: inline-block;
+        text-align: center;
+        padding: 5px;
+    }
+
+    
+    .footer-content a{
+        text-decoration: none;
+        color: rgb(211, 34, 34);
+    }
+    
+    .list a:hover{
+        color:#f18930;
+    }
+    
+    .social-icons li:hover{
+        color:#f18930;
+    }
+    
+    .button-bar{ 
+        background: #f18930;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 50px;
+    }
+    
+    .button-bar p{
+        color: #343343;
+        margin: 0;
+        font-size: 16px;
+        padding: 7px;
+    }
+    
+    form{
+        margin-left: 20px;
+        width: 85%;
+    }
+    
+    #search-box{
+        background-color: #fff;
+        border-radius: 30px;
+    }
+    
+    #search-box #search-text{
+    
+        border: none;
+        outline: none;
+        background: none;
+        font-size:  15px;
+        margin-left: 10px;
+    }
+    
+    #search-box #search-btn{
+        background-color: #fff;
+        cursor: pointer;
+        border: none;
+        padding: 15px;
+        border-radius: 50%;
+        font-size: 18px;
+    }
+    
+
+
+
+}

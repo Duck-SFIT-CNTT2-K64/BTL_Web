@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QLPH</title>
+    <link rel="stylesheet" href="./home_page.css">
+    <link rel="stylesheet" href="./respon_home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="title">
+            <img class="logo" src="../img/logoutc.jpg" alt="logo">
+            <p class="title--content1">University of Transport and Communication</p>
+            <p class="title--content2"><b>Hệ thống quản lý phòng học</b></p>
+        </div>
+    </header>
+
+    <!-- <nav class="sticky">
+        <ul class="navigation_sticky">
+            <li class="navigation_sticky--content">
+                <a class="sticky_link" href="#">Trang chủ</a>
+            </li>
+            <li class="navigation_sticky--content">
+                <a class="sticky_link" href="#">
+                    Thông tin phòng học
+                </a>
+            </li>
+            <li class="navigation_sticky--content">
+                <a class="sticky_link" href="#">
+                    Lịch biểu phòng học
+                </a>
+            </li>
+            <li class="navigation_sticky--content">
+                <a class="sticky_link" href="../register/in4.html">
+                    Đăng ký phòng học
+                </a>
+            </li>
+            <li class="navigation_sticky--content"><button class="button--sign_in">Sign-in</button></li>
+        </ul>
+    </nav> -->
+
+    <nav class="nav-container">
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="navigation_sticky">
+            <li class="navigation_sticky--content"><a href="#" class="sticky_link">Trang chủ</a></li>
+            <li class="navigation_sticky--content"><a href="../room_infomation/in4.html" class="sticky_link">Thông tin phòng học</a></li>
+            <li class="navigation_sticky--content"><a href="../schedule/Lichbieuphonghoc.html" class="sticky_link">Lịch biểu phòng học</a></li>
+            <li class="navigation_sticky--content"><a href="#" class="sticky_link">Đăng ký phòng học</a></li>
+            <li class="navigation_sticky--content"><button><a class="button--sign_in" href="../sigh_in/login/dnhap.html">Sign-in</a></button></li>
+        </ul>
+    </nav>
+
+
+    <div class="container">
+        <div class="main--content">
+            <div class="welcome">
+                <h1 class="welcome_title">Welcome!</h1>
+                <p class="welcome_content--main">Đây là hệ th quản lí phòng học giúp bạn khai thác tối đa tiềm năng của mỗi phòng học. Với giao diện hiện đại và tính năng mạnh mẽ, bạn có thể dễ dàng đặt lịch, quản lý tài nguyên và theo dõi sử dụng phòng mọi lúc, mọi nơi. Hãy để chúng tôi giúp bạn tối ưu hóa trải nghiệm học tập và giảng dạy!</p>
+                <p class="welcome_content--extra">Bắt đầu ngay bây giờ và trải nghiệm sự khác biệt!</p>
+                <p class="welcome_content--button" onclick="openModal('signupModal')">Đăng ký ngay!</p>
+            </div>
+            <div class="img--welcome">
+                <div class="img_layer bottom"></div>
+                <div class="img_layer middle"></div>
+                <div class="img_layer top"></div>
+            </div>
+        </div>
+
+        <div class="calendar">
+            <div class="calendar_layer bottom">
+                <h1 class="calendar_content--title">Lịch biểu phòng học</h1>
+                <div class="calendar_content">
+                    <p class="calendar_content--main">Cung cấp cái nhìn tổng quan về lịch trình sử dụng các phòng học trong hệ thống. Tại đây, bạn có thể dễ dàng theo dõi và quản lý thời gian sử dụng phòng học với các thông tin chi tiết như:</p>
+                    <ul>
+                        <li class="calendar_content--extra"><b>Thời gian: </b>Hiển thị lịch sử dụng phòng theo từng ngày, tuần, hoặc tháng, giúp bạn nắm rõ thời gian phòng trống và đã đặt.</li>
+                        <li class="calendar_content--extra"><b>Người đặt phòng: </b>Thông tin về người đã đặt phòng để có thể liên hệ trong trường hợp cần điều chỉnh hoặc hợp tác sử dụng.</li>
+                        <li class="calendar_content--extra"><b>Mục đích sử dụng: </b>Hiển thị loại hình hoạt động được tổ chức trong phòng (giảng dạy, hội thảo, họp nhóm,...), giúp bạn xác định tính phù hợp của phòng với nhu cầu của mình.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="calendar_layer middle">
+                <h1 class="calendar_content--title">Lịch biểu phòng học</h1>
+                <div class="calendar_content">
+                    <p class="calendar_content--main">Cung cấp cái nhìn tổng quan về lịch trình sử dụng các phòng học trong hệ thống. Tại đây, bạn có thể dễ dàng theo dõi và quản lý thời gian sử dụng phòng học với các thông tin chi tiết như:</p>
+                    <ul>
+                        <li class="calendar_content--extra"><b>Thời gian: </b>Hiển thị lịch sử dụng phòng theo từng ngày, tuần, hoặc tháng, giúp bạn nắm rõ thời gian phòng trống và đã đặt.</li>
+                        <li class="calendar_content--extra"><b>Người đặt phòng: </b>Thông tin về người đã đặt phòng để có thể liên hệ trong trường hợp cần điều chỉnh hoặc hợp tác sử dụng.</li>
+                        <li class="calendar_content--extra"><b>Mục đích sử dụng: </b>Hiển thị loại hình hoạt động được tổ chức trong phòng (giảng dạy, hội thảo, họp nhóm,...), giúp bạn xác định tính phù hợp của phòng với nhu cầu của mình.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="calendar_layer top">
+                <h1 class="calendar_content--title">Lịch biểu phòng học</h1>
+                <div class="calendar_content">
+                    <p class="calendar_content--main">Cung cấp cái nhìn tổng quan về lịch trình sử dụng các phòng học trong hệ thống. Tại đây, bạn có thể dễ dàng theo dõi và quản lý thời gian sử dụng phòng học với các thông tin chi tiết như:</p>
+                    <ul>
+                        <li class="calendar_content--extra"><b>Thời gian: </b>Hiển thị lịch sử dụng phòng theo từng ngày, tuần, hoặc tháng, giúp bạn nắm rõ thời gian phòng trống và đã đặt.</li>
+                        <li class="calendar_content--extra"><b>Người đặt phòng: </b>Thông tin về người đã đặt phòng để có thể liên hệ trong trường hợp cần điều chỉnh hoặc hợp tác sử dụng.</li>
+                        <li class="calendar_content--extra"><b>Mục đích sử dụng: </b>Hiển thị loại hình hoạt động được tổ chức trong phòng (giảng dạy, hội thảo, họp nhóm,...), giúp bạn xác định tính phù hợp của phòng với nhu cầu của mình.</li>
+                    </ul>
+                </div>
+            </div>    
+        </div>
+
+        <div class="information">
+            <div class="information_layer">
+                <div class="information_content">
+                        <h1 class="information_content--title">Thông tin phòng học</h1>
+                        <p class="information_content--main">Bạn sẽ tìm thấy đầy đủ các chi tiết cần thiết về từng phòng học trong hệ thống. Chúng tôi cung cấp một bảng mô tả chi tiết về các phòng bao gồm:</p>
+                    <ul>
+                        <li class="information_content--extra"><b>Tên phòng: </b>Mỗi phòng học đều có mã định danh duy nhất, giúp bạn dễ dàng tìm kiếm và quản lý.</li>
+                        <li class="information_content--extra"><b>Sức chứa: </b>Hiển thị số lượng người tối đa mà phòng có thể chứa, đảm bảo việc lựa chọn phù hợp với quy mô lớp học hoặc sự kiện.</li>
+                        <li class="information_content--extra"><b>Thiết bị hỗ trợ: </b>Danh sách các trang thiết bị có sẵn trong phòng như máy chiếu, bảng thông minh, hệ thống âm thanh, điều hòa không khí,...</li>
+                        <li class="information_content--extra"><b>Tình trạng hiện tại: </b>Kiểm tra phòng học còn trống hay đã được đặt trước, cùng với thông tin về lịch sử đặt phòng.</li>
+                        <li class="information_content--extra"><b>Vị trí: </b>Mô tả vị trí cụ thể của phòng trong tòa nhà để dễ dàng di chuyển và tìm kiếm.</li>
+                    </ul>
+                <p class="information_content--commit">Chúng tôi đảm bảo cam kết cung cấp thông tin chi tiết và cập nhật thường xuyên để giúp bạn quản lý không gian học tập một cách hiệu quả nhất.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="loginModal" class="login-modal">
+        <div class="login-modal-content">
+            <span class="close-button" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Đăng Nhập</h2>
+            <form>
+                <div class="form-group">
+                    <label for="username">Tên đăng nhập</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mật khẩu</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="login-button">Đăng Nhập</button>
+            </form>
+            <div class="switch-link">
+                <a href="#" onclick="toggleModal('loginModal', 'signupModal')">Đã có tài khoản? Đăng nhập ngay</a>
+            </div>            
+        </div>
+    </div>
+
+    <div id="signupModal" class="signup-modal">
+        <div class="signup-modal-content">
+            <span class="close-button" onclick="closeModal('signupModal')">&times;</span>
+            <h2>Đăng Ký</h2>
+            <div class="form-group">
+                <label>Tên đăng nhập</label>
+                <input type="text" placeholder="Chọn tên đăng nhập">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="Nhập email">
+            </div>
+            <div class="form-group">
+                <label>Mật khẩu</label>
+                <input type="password" placeholder="Chọn mật khẩu">
+            </div>
+            <div class="form-group">
+                <label>Xác nhận mật khẩu</label>
+                <input type="password" placeholder="Nhập lại mật khẩu">
+            </div>
+            <button class="modal-button">Đăng Ký</button>
+            <div class="switch-link">
+                <a href="#" onclick="toggleModal('signupModal', 'loginModal')">Đã có tài khoản? Đăng nhập ngay</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="container_footer">
+          <div class="footer-content">
+          <h3 class="link_fast">Thông tin liên hệ</h3>
+          <p>Email:abc123@gmail.com</p>
+          <p>Phone:1234567890</p>
+          <p>Address:123 abc street, city</p>
+        </div>
+        <div class="footer-content">
+          <h3 class="link_fast">Liên kết nhanh</h3>
+            <ul class="list">
+              <li><a class="link_list" href="">Trang chủ</a></li>
+              <li><a class="link_list" href="">Giới thiệu</a></li>
+              <li><a class="link_list" href="">Dịch vụ</a></li>
+              <li><a class="link_list" href="">Hỗ trợ</a></li>
+              <li><a class="link_list" href="">Chính sách bảo mật</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+          <h3 class="link_fast">Mạng xã hội</h3>
+          <ul class="social-icons">
+            <li><a class="link_list" href=""><i class="fab fa-facebook"></i></a></li>
+            <li><a class="link_list" href=""><i class="fab fa-twitter"></i></a></li>
+            <li><a class="link_list" href=""><i class="fab fa-instagram"></i></a></li>
+            <li><a class="link_list" href=""><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+          <form class="search" action="" id="search-box">
+            <input type="text" id="search-text" placeholder="Tìm kiếm...">
+            <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="button-bar">
+        <p>&copy; 2024 Bản quyền thuộc về BTL</p>
+      </div>
+      </footer>   
+    
+    <script src="./home_page.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đknhap</title>
+    <link rel="stylesheet" href="./dknhap.css">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <img class="logo" src="../images/logoutc.jpg" alt="logo">
+            <h1>University of Transport and Communication</h1>
+            <p><b>Hệ thống quản lý phòng học</b></p>
+        </div>
+    </header>
+    <div class="main_dk">
+        <div class="container_dk">
+            <h2>Form Đăng Ký</h2>
+            <form id="registrationForm" onsubmit="return validateForm()">
+                <label for="username">Họ tên:</label>
+                <input type="text" id="username" name="username" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" oninput="validateEmail()" required>
+    
+                <label for="phone">Số điện thoại:</label>
+                <input type="text" id="phone" name="phone" required>
+    
+                <label for="password">Mật khẩu:</label>
+                <input type="password" id="password" name="password" required>
+    
+                <label for="confirmPassword">Xác nhận mật khẩu:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+    
+                <button type="submit">Đăng Ký</button>
+               
+                
+            </form>
+            <p id="errorMessage"></p>
+        </div>
+    </div>
+   
+
+    <script src="./dknhap.js"></script>
+</body>
+</html>

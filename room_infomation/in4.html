@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống quản lý phòng học</title>
+    <link rel="stylesheet" href="./in4.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left sidebar -->
+        <div class="sidebar">
+            <h3 class="menu-title">Danh mục</h3>
+            <ul class="menu-list">
+                <li>
+                    <input type="checkbox" id="classroom" class="room-filter" data-type="study">
+                    <label for="classroom">Phòng học</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="library" class="room-filter" data-type="library">
+                    <label for="library">Thư viện</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="rest" class="room-filter" data-type="rest">
+                    <label for="res">Phòng nghỉ</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="meeting" class="room-filter" data-type="meeting">
+                    <label for="meeting">Phòng họp</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="conference" class="room-filter" data-type="conference">
+                    <label for="conference">Phòng hội thảo</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="read" class="room-filter" data-type="read">
+                    <label for="read">Phòng đọc sách</label>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main content -->
+        <div class="content">
+            <div class="room-grid">
+
+                <div class="room-card" data-room-type="library">
+                    <img src="../img/phong_thu_vien.jfif" alt="Phòng thư viện">
+                    <div class="room-info">
+                        <h4>Phòng thư viện:</h4>
+                        <p>Mở cửa từ 7h-17h30 (từ thứ 2 - thứ 6)</p>
+                        <a href="../register/thu_vien/thuvien.html" class="room--button">Đăng kí!</a>
+                    </div>
+                </div>
+
+                <div class="room-card" data-room-type="conference">
+                    <img src="../img/background_content1.jpg" alt="Phòng hội thảo">
+                    <div class="room-info">
+                        <h4>Phòng hội thảo: nơi tổ chức sự kiện</h4>
+                        <p>(chứa tối đa 100 người)</p>
+                        <a href="../register/phong_hoi_thao/phonghoithao.html" class="room--button">Đăng kí!</a>
+                    </div>
+                </div>
+
+                <div class="room-card" data-room-type="conference">
+                    <img src="../img/background_content2.jpg" alt="Phòng hội thảo">
+                    <div class="room-info">
+                        <h4>Phòng hội thảo: nơi tổ chức sự kiện</h4>
+                        <p>(chứa tối đa 100 người)</p>
+                        <a href="../register/phong_hoi_thao/phonghoithao2.html" class="room--button">Đăng kí!</a>
+                    </div>
+                </div>
+
+                <div class="room-card" data-room-type="study">
+                    <img src="../img/phong_hoc.jfif" alt="Phòng học">
+                    <div class="room-info">
+                        <h4>Phòng học:</h4>
+                        <p>Mở cửa từ 7h-17h30 (từ thứ 2 - thứ 6)</p>
+                        <a href="../register/phong_hoc/phonghoc.html" class="room--button">Đăng kí!</a>
+                    </div>
+                </div>
+
+                <div class="room-card" data-room-type="meeting">
+                    <img src="../img/phong_hop.jfif" alt="Phòng họp">
+                    <div class="room-info">
+                        <h4>Phòng họp:</h4>
+                        <p>(chứa tối đa 50 người)</p>
+                        <a href="../register/phong_hop/phonghop.html" class="room--button">Đăng kí!</a>
+                    </div>
+                </div>
+
+                <div class="room-card" data-room-type="read">
+                    <img src="../img/phong_doc_sach.jfif" alt="Phòng đọc sách">
+                    <div class="room-info">
+                        <h4>Phòng đọc sách:</h4>
+                        <p>Mở cửa từ 7h-17h30 (từ thứ 2 - thứ 6)</p>
+                        <a href="../register/phong_doc_sach/phongdocsach.html" class="room--button">Đăng kí!</a>
+                    </div>
+                </div>
+
+                <div class="room-card" data-room-type="library">
+                    <img src="../img/thu_vien_1.jfif" alt="Phòng thư viện">
+                    <div class="room-info">
+                        <h4>Phòng thư viện:</h4>
+                        <p>Mở cửa từ 7h-17h30  (từ thứ 2 - thứ 6)</p>
+                        <a href="../register/thu_vien/thuvien2.html" class="room--button">Đăng kí!</a>
+                    </div>
+                </div>
+
+                <div class="room-card" data-room-type="study">
+                    <img src="../img/phong_hoc_1.jfif" alt="Phòng học">
+                    <div class="room-info">
+                        <h4>Phòng học:</h4>
+                        <p>Mở cửa từ 7h-17h30  (từ thứ 2 - thứ 6)</p>
+                        <a href="../register/phong_hoc/phonghoc2.html" class="room--button">Đăng kí!</a>
+                    </div>
+                </div>
+
+                <div class="room-card" data-room-type="read">
+                    <img src="../img/phong_doc_sach_2.jfif" alt="Phòng đọc sách">
+                    <div class="room-info">
+                        <h4>Phòng đọc sách:</h4>
+                        <p>Mở cửa từ 7h-17h30  (từ thứ 2 - thứ 6)</p>
+                        <a href="../register/phong_doc_sach/phongdocsach2.html" class="room--button">Đăng kí!</a>
+                    </div>
+                </div>
+
+                <div class="room-card" data-room-type="meeting">
+                    <img src="../img/phong_hop_1.jfif" alt="Phòng họp">
+                    <div class="room-info">
+                        <h4>Phòng họp:</h4>
+                        <p>(chứa tối đa 50 người)</p>
+                        <a href="../register/phong_hop/phonghop2.html" class="room--button">Đăng kí!</a>
+                    </div>
+                </div>
+
+                <div class="room-card" data-room-type="library">
+                    <img src="../img/thu_vien_2.jfif" alt="Phòng thư viện">
+                    <div class="room-info">
+                        <h4>Phòng thư viện:</h4>
+                        <p>Mở cửa từ 7h-17h30  (từ thứ 2 - thứ 6)</p>
+                        <a href="../register/thu_vien/thuvien3.html" class="room--button">Đăng kí!</a>
+                    </div>
+                </div>
+
+                <div class="room-card" data-room-type="study">
+                    <img src="../img/phong_hoc_2.jfif" alt="Phòng học">
+                    <div class="room-info">
+                        <h4>Phòng học:</h4>
+                        <p>(chứa tối đa 50 người)</p>
+                        <a href="../register/phong_hoc/phonghoc3.html" class="room--button">Đăng kí!</a>
+                    </div>
+                </div>
+
+                <div class="room-card" data-room-type="meeting">
+                    <img src="../img/phong_hop_3.jfif" alt="Phòng họp">
+                    <div class="room-info">
+                        <h4>Phòng họp:</h4>
+                        <p>(chứa tối đa 50 người)</p>
+                        <a href="../register/phong_hop/phonghop3.html" class="room--button">Đăng kí!</a>
+                    </div>
+                </div>
+
+                <div class="room-card" data-room-type="meeting">
+                    <img src="../img/phong_hop_2.jfif" alt="Phòng họp">
+                    <div class="room-info">
+                        <h4>Phòng họp:</h4>
+                        <p>(chứa tối đa 50 người)</p>
+                        <a href="../register/phong_hop/phonghop4.html" class="room--button">Đăng kí!</a>
+                    </div>
+                </div>
+
+                <div class="room-card" data-room-type="conference">
+                    <img src="../img/background_content3.jpg" alt="Phòng hội thảo">
+                    <div class="room-info">
+                        <h4>Phòng hội thảo: nơi tổ chức sự kiện</h4>
+                        <p>(chứa tối đa 100 người)</p>
+                        <a href="../register/phong_hoi_thao/phonghoithao3.html" class="room--button">Đăng kí!</a>
+                    </div>
+                </div>
+
+                <div class="room-card" data-room-type="read">
+                    <img src="../img/phong_doc_sach_1.jfif" alt="Phòng đọc sách">
+                    <div class="room-info">
+                        <h4>Phòng đọc sách:</h4>
+                        <p>Mở cửa từ 7h-17h30  (từ thứ 2 - thứ 6)</p>
+                        <a href="../register/phong_doc_sach/phongdocsach3.html" class="room--button">Đăng kí!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script_in4.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Responsive */
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+  
+@media only screen and (max-width: 768px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+
+}
+@media only screen and (max-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+
+
+
+
+body{
+    background: fixed;
+    background-color: #c2accc;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    background: gray;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+}
+header .title{
+    color: white;
+    background-color: #614170;
+    height: 150px;
+    width: 100%;
+    display: flex;
+}
+div.title h1{
+    font-size: 30px;
+    margin-top: 30px;
+    padding-right: 30px;
+}
+
+div.title p{
+    display: flex;
+    font-size: 50px;
+    justify-content: flex-end;
+    align-items: center;
+}
+img.logo{
+    cursor: pointer;
+    height: 100px;
+    width: 150px;
+    position: relative;
+    top: 20px;
+}
+
+
+/* navigation*/
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    align-items: center;
+    width: 100%;
+}
+nav li{
+    padding: 10px 10px;
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: transform 0.5s ease;
+}
+button.signin_button{
+    cursor: pointer;
+    background-image: linear-gradient(rgb(164, 68, 164),rgba(72, 148, 148, 0.589),rgb(158, 46, 158));
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+    border-radius: 8px;
+    height: 50px;
+    width: 100px;
+}
+nav.Menu{
+    position: relative;
+    background-color: rgb(55, 17, 65);
+    width: 100%;
+    margin-top: -10px;
+    padding: 0;
+    z-index: 10;
+}
+
+nav .menu a{
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 600;
+}
+nav li a:hover{
+    background-color: rgb(60, 2, 58);
+    padding: 24px;
+    transform: scale(1.1);
+}

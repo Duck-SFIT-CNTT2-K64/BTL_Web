@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./dnhap.css">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <img class="logo" src="../images/logoutc.jpg" alt="logo">
+            <h1>University of Transport and Communication</h1>
+            <p><b>Hệ thống quản lý phòng học</b></p>
+        </div>
+    </header>
+    
+
+    <div class="logo">
+        
+    
+        <div class="login-container">
+            <h2>Đăng nhập</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Tài khoản:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mật khẩu:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="button" onclick="login()">Đăng nhập</button>
+                <p>Chưa có tài khoản?<a class="button-sign_up" href="../sign_up/dknhap.html">Đăng kí</a></p>
+            </form>
+            <p id="message"></p>
+        </div>
+    </div>
+    <script src="./dnhap.js"></script>
+</body>
+</html>

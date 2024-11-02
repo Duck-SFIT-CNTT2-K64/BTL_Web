@@ -1,0 +1,423 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: #c2accc;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* header{
+    background: gray;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+} */
+header .title{
+    color: white;
+    background-color: #614170;
+    height: 160px;
+    width: 100%;
+    display: flex;
+}
+div.title h1{
+    font-size: 25px;
+    text-align: start;
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+
+div.title p{
+    display: flex;
+    font-size: 50px;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+}
+img.logo{
+    cursor: pointer;
+    height: 100px;
+    width: 150px;
+    position: relative;
+    top: 20px;
+}
+
+
+/* navigation*/
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    align-items: center;
+    width: 100%;
+}
+nav li{
+    padding: 10px 10px;
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: transform 0.5s ease;
+}
+.signin_button{
+    cursor: pointer;
+    background-image: linear-gradient(rgb(164, 68, 164),rgba(230, 91, 167, 0.589),rgb(158, 46, 158));
+    /* color: white; */
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+    border-radius: 8px;
+    height: 50px;
+    width: 100px;
+}
+nav.Menu{
+    position: relative;
+    background-color: rgb(55, 17, 65);
+    width: 100%;
+    margin-top: -10px;
+    padding: 0;
+    z-index: 10;
+}
+
+nav .menu a{
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 600;
+}
+nav li a:hover{
+    background-color: rgb(60, 2, 58);
+    padding: 24px;
+    transform: scale(1.1);
+}
+
+/* Duoi la content */
+
+
+
+
+.schedule-section {
+    padding: 20px;
+    /* display: flex; */
+    margin-left: 30px;
+}
+
+.schedule-header {
+    margin-top: 50px;
+    margin-left: 55px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.schedule-table {
+    width: 65%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.schedule-table th{
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: #8668ac;
+    font-weight: normal;
+    
+}
+.schedule-table td {
+    border: 1px solid #ddd;
+    /* padding: 10px; */
+    font-size: 18px;
+    background-color: burlywood;
+}
+
+
+.schedule-table td.time-slot{
+    padding: 20px;
+    background-color: rgb(170, 124, 200);
+    color: rgb(0, 0, 0);
+}
+
+.schedule-table td{
+    background :#bb9bc9;
+    height: 80px;
+}
+
+.schedule-table .schedule-content:hover{
+    background-color: rgb(147, 104, 167);
+}
+
+.registerclass{
+    opacity: 0;
+}
+.registerclass:hover{
+    display: block;
+    opacity: 1;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+
+
+
+
+/* Calendar */
+
+.calendar-note {
+    position: absolute;
+    left: 69%;
+    bottom: 17%;
+}
+
+.calendar {
+    border: solid #000;
+    width: 350px;
+    height: 240px;
+    text-align: center;
+    background-color: antiquewhite;
+    
+}
+
+.current-date {
+    background-color: #2cbd79;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    height: 40px;
+}
+
+
+.calendar ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+}
+.calendar ul li{
+    width: calc(100% / 7);
+    height: 30px;
+}
+.calendar .weeks li{
+    font-weight: 400;
+    background-image: linear-gradient(rgb(108, 196, 164),rgb(104, 104, 175));
+    color: white;
+    height: 30px;
+    
+}
+.calendar-note .icons{
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    top: 30px;
+}
+
+
+.calendar .day-cell{
+    height: 30px;
+
+}
+
+.icons span{
+    margin-right: 5px;
+}
+span:hover{
+    background-color: #78d428;
+    cursor: pointer;
+}
+
+
+
+
+.days li:hover{
+    background-color: gray;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+    
+}
+
+.days li.inactive{
+    color: #aaa;
+}
+.days li.active{
+    color:  rgb(224, 236, 236);
+    background-color: #216abd;
+    border-radius: 50%;
+    height: 30px;
+}
+
+
+
+.selected-date {
+    background-color: #613a97; /* Highlight color */
+    color: rgb(232, 239, 239);
+    font-weight: bold;
+    z-index: 2;
+
+    
+}
+
+/* Style for the highlighted selected date */
+.highlighted {
+    background-color: #638085; /* Change to desired highlight color */
+    color: rgb(224, 219, 219);
+    font-weight: bold;
+    border-radius:  50%;
+}
+
+
+
+
+
+/*Footer*/
+
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+    background: #343434;
+    padding-top: 50px;
+}
+
+  
+.footer-container{
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+  
+.footer-content{
+    width: 33.3%;
+}
+  
+h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+  
+.footer-content p{
+    width: 190px;
+    margin: auto;
+    padding: 7px;
+}
+  
+.footer-content ul{
+    text-align: center;
+}
+  
+.list{
+    padding: 0;
+}
+  
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+}
+  
+.list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #f18930;
+    transition-duration: .5s;
+}
+  
+.list li:hover::before{
+    width: 70px;
+}
+  
+.social-icons{
+    text-align: center;
+    padding: 0;
+    font-size: 20px;
+}
+  
+.social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+
+  
+.footer-content a{
+    text-decoration: none;
+    color: rgb(211, 34, 34);
+}
+  
+.footer-content a:hover{
+    color:#f18930;
+}
+  
+.social-icons i:hover{
+    color:#f18930;
+}
+  
+.button-bar{ 
+    background: #f18930;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+  
+.button-bar p{
+    color: #343343;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
+  
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+#search-box{
+    background-color: #fff;
+    border-radius: 30px;
+}
+  
+#search-box #search-text{
+    width: 300px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size:  15px;
+}
+  
+#search-box #search-btn{
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+  

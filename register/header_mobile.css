@@ -1,0 +1,83 @@
+*{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background: fixed;
+        background-color: #c2accc;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    
+    header .title{
+        color: white;
+        font-size: 14px;
+        background-color: #614170;
+    }
+    div.title h1{
+        font-size: 10px;
+        width: 33.33%;
+    }
+    div.title p{
+        width: 50%;
+        font-size: 20px;
+        text-align: center;
+        
+    }
+    img.logo{
+        cursor: pointer;
+        width: 25%;
+    }
+    
+    
+    /* navigation*/
+    nav ul{
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+        align-items: center;
+    
+    }
+    nav li a{
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        font-style: italic;
+        font-size: 8px;
+        font-weight: 600;
+        padding: 0;
+        transition: transform 0.3s ease;
+    }
+    button.signin_button{
+        cursor: pointer;
+        background-image: linear-gradient(rgb(164, 68, 164),rgba(72, 148, 148, 0.589),rgb(158, 46, 158));
+        color: white;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 15px;
+        border-radius: 8px;
+        height: 50px;
+        width: 100px;
+    }
+    nav.Menu{
+        background-color: rgb(55, 17, 65);
+        padding: 0;
+        z-index: 10;
+    }
+    nav li a:hover{
+        background-color: rgb(60, 2, 58);
+        padding: 5px;
+    }

@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/dang_nhap.jfif);
+    font-family: Arial, sans-serif;
+    display: block;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    align-items: center;
+    background-color: #f3f4f6;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+header{
+    background: gray;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+} 
+header .title{
+    color: black;
+    background-color: #e7dfeb;
+    height: 150px;
+    width: 100%;
+    display: flex;
+}
+div.title h1{
+    font-size: 30px;
+    margin-top: 70px;
+    padding-right: 30px;
+}
+
+div.title p{
+    display: flex;
+    font-size: 50px;
+    justify-content: flex-end;
+    align-items: center;
+}
+img.logo{
+    cursor: pointer;
+    height: 100px;
+    width: 150px;
+    position: relative;
+    top: 20px;
+}
+
+.logo{
+    display: flex;
+    /* justify-content: space-evenly; */
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.login-container {
+    width: 300px;
+    padding-left: 20px;
+    margin-left: 190px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+    margin-top: 65px;   
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #f3f4f6;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #be3e3e;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-sign_up{
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #8a1919;
+}
+#loginForm p a{
+    cursor: pointer;
+    color:rgb(28 10 162);
+}
+a:hover {
+    background-color: rgb(135, 132, 136);
+}
+#message {
+    color: red;
+    margin-top: 15px;
+}
